@@ -14,7 +14,7 @@
             <section class="hero">
                 <h1 class="display-3">Work Day Scheduler</h1>
                 <p class="lead">A simple calendar app for scheduling your work day</p>
-                <p id="currentDay" class="lead"></p>
+                <p id="currentDayAndTime" class="lead"></p>
             </section>
         </header>
 
@@ -23,56 +23,56 @@
             <table class="table col-11 table-borderless">
                 <tbody>
                   <tr class="d-flex row hour">
-                    <td class="col-1 d-flex align-items-center justify-content-center text-dark">9:00</td>
+                    <td class="col-1 d-flex align-items-center justify-content-center text-dark">9:00 am</td>
                     <td class="col-9 d-flex render" id="9"><input class="col-12 h-100 small" spellcheck="true"/></td>
                     <td class="col-1 btn-outline-success d-flex align-items-center justify-content-center save-button border border-success rounded" id="0">SAVE</td>
                     <td class="col-1 d-flex align-items-center justify-content-center btn btn-outline-danger discard border border-danger" id="0">DISCARD</td>
                   </tr>
                   <tr class="d-flex row hour">
-                    <td class="col-1 d-flex align-items-center justify-content-center text-dark">10:00</td>
+                    <td class="col-1 d-flex align-items-center justify-content-center text-dark">10:00 am</td>
                     <td class="col-9 d-flex render" id="10"><input class="col-12 h-100 small" spellcheck="true"/></td>
                     <td class="col-1 btn-outline-success d-flex align-items-center justify-content-center save-button border border-success rounded" id="1">SAVE</td>
                     <td class="col-1 d-flex align-items-center justify-content-center btn btn-outline-danger discard border border-danger" id="1">DISCARD</td>
                   </tr>
                   <tr class="d-flex row hour">
-                    <td class="col-1 d-flex align-items-center justify-content-center text-dark">11:00</td>
+                    <td class="col-1 d-flex align-items-center justify-content-center text-dark">11:00 am</td>
                     <td class="col-9 d-flex render" id="11"><input class="col-12 h-100 small" spellcheck="true"/></td>
                     <td class="col-1 btn-outline-success d-flex align-items-center justify-content-center save-button border border-success rounded" id="2">SAVE</td>
                     <td class="col-1 d-flex align-items-center justify-content-center btn btn-outline-danger discard border border-danger" id="2">DISCARD</td>
                   </tr>
                   <tr class="d-flex row hour">
-                    <td class="col-1 d-flex align-items-center justify-content-center text-dark">12:00</td>
-                    <td class="col-9 d-flex render" id="12"><input class="col-12 h-100 small" spellcheck="true"/></td>
+                    <td class="col-1 d-flex align-items-center justify-content-center text-dark">12:00 pm</td>
+                    <td class="col-9 d-flex render" id="12" val="tron"><input class="col-12 h-100 small" spellcheck="true"/></td>
                     <td class="col-1 btn-outline-success d-flex align-items-center justify-content-center save-button border border-success rounded" id="3">SAVE</td>
                     <td class="col-1 d-flex align-items-center justify-content-center btn btn-outline-danger discard border border-danger" id="3">DISCARD</td>
                   </tr>
                   <tr class="d-flex row hour">
-                    <td class="col-1 d-flex align-items-center justify-content-center text-dark">1:00</td>
-                    <td class="col-9 d-flex render" id="1"><input class="col-12 h-100 small" spellcheck="true"/></td>
+                    <td class="col-1 d-flex align-items-center justify-content-center text-dark">1:00 pm</td>
+                    <td class="col-9 d-flex render" id="13"><input class="col-12 h-100 small" spellcheck="true"/></td>
                     <td class="col-1 btn-outline-success d-flex align-items-center justify-content-center save-button border border-success rounded" id="4">SAVE</td>
                     <td class="col-1 d-flex align-items-center justify-content-center btn btn-outline-danger discard border border-danger" id="4">DISCARD</td>
                   </tr>
                   <tr class="d-flex row hour">
-                    <td class="col-1 d-flex align-items-center justify-content-center text-dark">2:00</td>
-                    <td class="col-9 d-flex render" id="2"><input class="col-12 h-100 small" spellcheck="true"/></td>
+                    <td class="col-1 d-flex align-items-center justify-content-center text-dark">2:00 pm</td>
+                    <td class="col-9 d-flex render" id="14"><input class="col-12 h-100 small" spellcheck="true"/></td>
                     <td class="col-1 btn-outline-success d-flex align-items-center justify-content-center save-button border border-success rounded" id="5">SAVE</td>
                     <td class="col-1 d-flex align-items-center justify-content-center btn btn-outline-danger discard border border-danger" id="5">DISCARD</td>
                   </tr>
                   <tr class="d-flex row hour">
-                    <td class="col-1 d-flex align-items-center justify-content-center text-dark">3:00</td>
-                    <td class="col-9 d-flex render" id="3"><input class="col-12 h-100 small" spellcheck="true"/></td>
+                    <td class="col-1 d-flex align-items-center justify-content-center text-dark">3:00 pm</td>
+                    <td class="col-9 d-flex render" id="15"><input class="col-12 h-100 small" spellcheck="true"/></td>
                     <td class="col-1 btn-outline-success d-flex align-items-center justify-content-center save-button border border-success rounded" id="6">SAVE</td>
                     <td class="col-1 d-flex align-items-center justify-content-center btn btn-outline-danger discard border border-danger" id="6">DISCARD</td>
                   </tr>
                   <tr class="d-flex row hour">
-                    <td class="col-1 d-flex align-items-center justify-content-center text-dark">4:00</td>
-                    <td class="col-9 d-flex render" id="4"><input class="col-12 h-100 small" spellcheck="true"/></td>
+                    <td class="col-1 d-flex align-items-center justify-content-center text-dark">4:00 pm</td>
+                    <td class="col-9 d-flex render" id="16"><input class="col-12 h-100 small" spellcheck="true"/></td>
                     <td class="col-1 btn-outline-success d-flex align-items-center justify-content-center save-button border border-success rounded" id="7">SAVE</td>
                     <td class="col-1 d-flex align-items-center justify-content-center btn btn-outline-danger discard border border-danger" id="7">DISCARD</td>
                   </tr>
                   <tr class="d-flex row hour">
-                    <td class="col-1 d-flex align-items-center justify-content-center text-dark">5:00</td>
-                    <td class="col-9 d-flex render" id="5"><input class="col-12 h-100 small" spellcheck="true"/></td>
+                    <td class="col-1 d-flex align-items-center justify-content-center text-dark">5:00 pm</td>
+                    <td class="col-9 d-flex render" id="17"><input class="col-12 h-100 small" spellcheck="true"/></td>
                     <td class="col-1 btn-outline-success d-flex align-items-center justify-content-center save-button border border-success rounded" id="8">SAVE</td>
                     <td class="col-1 d-flex align-items-center justify-content-center btn btn-outline-danger discard border border-danger" id="8">DISCARD</td>
                   </tr>
